@@ -1,0 +1,4 @@
+.env
+vendor
+database/feather.db
+logs/TelegramErrorLogger-2023-05-05.txt
