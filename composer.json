@@ -4,7 +4,8 @@
         "bramus/router": "^1.6",
         "eleirbag89/telegrambotphp": "^1.4",
         "phpoption/phpoption": "^1.9",
-        "vlucas/phpdotenv": "^5.5"
+        "vlucas/phpdotenv": "^5.5",
+        "guzzlehttp/guzzle": "^7.5"
     },
     "autoload": {
         "psr-4": {

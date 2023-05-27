@@ -6,6 +6,6 @@ use Illuminate\Database\Schema\Blueprint;
 
 Capsule::schema()->create('telegram_users', function (Blueprint $table) {
     $table->unsignedBigInteger("telegram_user_id")->primary();
-    $table->unsignedBigInteger("moodle_user_id");
+    $table->unsignedBigInteger("moodle_user_id")->unique();
     $table->string('wstoken');
 });

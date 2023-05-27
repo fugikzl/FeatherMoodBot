@@ -10,7 +10,7 @@ class Request
     public function __construct()
     {
         $this->method = $_SERVER['REQUEST_METHOD'];
-        $this->entityBody = file_get_contents('php://input');
+        $this->entityBody = json_decode(file_get_contents('php://input'),1);
     }
 
     public function get($key, $default = null)

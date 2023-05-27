@@ -14,4 +14,18 @@ class TelegramUser extends Eloquent
         "moodle_user_id",
         "wstoken"
     ];
+
+    public static function isUserStored(int $user_id) : bool
+    {
+        return self::where("telegram_user_id",$user_id)->count() > 0 ? true : false;
+    }
+
+    // public static function getOrStoreUser(int $user_id) : int
+    // {
+    //     if(self::isUserStored($user_id)){
+    //         return self::where("telegram_user_id",$user_id)->first();
+    //     }else{
+
+    //     }
+    // }
 }
